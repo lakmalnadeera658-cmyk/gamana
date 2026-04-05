@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+
+  --color-primary: #004253;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #005b71;
+  --color-on-primary-container: #8ed1ea;
+  --color-primary-fixed: #b7eaff;
+  --color-on-primary-fixed: #001f28;
+  
+  --color-secondary: #536167;
+  --color-secondary-container: #d6e5ec;
+  --color-on-secondary-container: #58676d;
+
+  --color-background: #f8f9fb;
+  --color-on-background: #191c1e;
+  
+  --color-surface: #f8f9fb;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #40484c;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container: #eceef0;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e1e3e4;
+  
+  --color-outline: #70787d;
+  --color-outline-variant: #bfc8cc;
+  
+  --color-surface-tint: #19667d;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-body;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
